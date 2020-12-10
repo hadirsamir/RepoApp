@@ -22,3 +22,21 @@ class RepoPresenter: RepoPresenterProtcol{
         self.presentError(errorString: errorString)
     }
 }
+
+// search Presenter protcol
+protocol SearchPresenterProtcol {
+    func presentSearchRepos(object: RepoBaseResponseModel)
+    func presentSearchError(stringError : String)
+}
+class SearchPresenter : SearchPresenterProtcol {
+    var view : SearchViewController?
+    func presentSearchRepos(object: RepoBaseResponseModel) {
+        
+    }
+    
+    func presentSearchError(stringError: String) {
+        
+    }
+    
+    
+}

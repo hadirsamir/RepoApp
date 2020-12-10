@@ -11,6 +11,7 @@ class  ItemsResponseModel : Mappable{
     var name : String = ""
     var created_at : String = ""
     var owner : OwnerResponseModel!
+    var description : String = ""
     required init?(map: Map) {
   
     }
@@ -20,6 +21,7 @@ class  ItemsResponseModel : Mappable{
         name <- map["name"]
         created_at <- map["created_at"]
         owner <- map["owner"]
+        description <- map["description"]
     }
     
     

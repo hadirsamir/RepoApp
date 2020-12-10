@@ -78,7 +78,7 @@ extension TrendingViewController : RepoViewProtcol {
     
     func viewRepos(object: RepoBaseResponseModel) {
      
-        self.itemsArray = object.items
+        self.itemsArray.append(contentsOf: object.items)
         DispatchQueue.main.async {
             self.trendingTableView.reloadData()
         }

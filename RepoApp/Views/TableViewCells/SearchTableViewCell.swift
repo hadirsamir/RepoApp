@@ -17,13 +17,7 @@ class SearchTableViewCell: UITableViewCell {
     public private (set) var  repoUrl : String?
 
     
-//    func configCell(object : Repo){
-//        repoName.text = object.name
-//        repoDescription.text = object.description
-//        languageLabel.text = object.language
-//        forkLabel.text = String(describing:object.numberOfForks)
-//        self.repoUrl = object.repoUrl
-//    }
+
     
     override func awakeFromNib() {
         super.awakeFromNib()

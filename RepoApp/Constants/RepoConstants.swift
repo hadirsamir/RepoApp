@@ -8,5 +8,6 @@
 import Foundation
 let BASE_URL = "https://api.github.com/search/repositories?q=all&page="
 let NUMBER_OF_ITEMS = "&per_page=10"
+let STARS_DESC_SEGMENT = "&sort=stars&order=desc"
 
 

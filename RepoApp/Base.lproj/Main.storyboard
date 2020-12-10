@@ -199,17 +199,8 @@
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-VW-8Jy">
-                                                            <rect key="frame" x="16" y="30.333333333333336" width="267" height="20"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="iQq-Y7-0yn"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-6X-KzA">
-                                                            <rect key="frame" x="8" y="62.333333333333329" width="292.33333333333331" height="20"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-6X-KzA">
+                                                            <rect key="frame" x="8" y="62.333333333333329" width="119" height="20"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downloadsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7Mq-QB-SYJ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
@@ -218,26 +209,7 @@
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of forks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-VX-3Ts">
-                                                                    <rect key="frame" x="47" y="0.0" width="84" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NkU-LR-ngt">
-                                                                    <rect key="frame" x="148" y="0.0" width="5" height="20"/>
-                                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="5" id="dTO-yb-BZt"/>
-                                                                    </constraints>
-                                                                </view>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="languageIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Q8L-wh-ty1">
-                                                                    <rect key="frame" x="170" y="0.0" width="30" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="30" id="ZPn-oA-mun"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Language" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwX-JB-fl4">
-                                                                    <rect key="frame" x="217" y="0.0" width="75.333333333333314" height="20"/>
+                                                                    <rect key="frame" x="35" y="0.0" width="84" height="20"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -247,25 +219,25 @@
                                                                 <constraint firstAttribute="height" constant="20" id="erp-td-Nrj"/>
                                                             </constraints>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchIconLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Xa6-4d-36V">
-                                                            <rect key="frame" x="342" y="18" width="56" height="56"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-VW-8Jy">
+                                                            <rect key="frame" x="8" y="23" width="382" height="40"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="56" id="3KF-Gw-ecj"/>
-                                                                <constraint firstAttribute="width" constant="56" id="uL4-sv-73B"/>
+                                                                <constraint firstAttribute="height" constant="40" id="iQq-Y7-0yn"/>
                                                             </constraints>
-                                                        </imageView>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" name="AccentColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="16" id="0hM-j6-lOd"/>
+                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="0hM-j6-lOd"/>
                                                         <constraint firstItem="i7i-Lc-1sm" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="1YG-NP-ggn"/>
-                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="top" secondItem="i7i-Lc-1sm" secondAttribute="bottom" constant="2" id="92B-1A-ibL"/>
-                                                        <constraint firstItem="Xa6-4d-36V" firstAttribute="trailing" secondItem="3E5-ld-Ii8" secondAttribute="trailingMargin" id="AWq-cY-lGP"/>
-                                                        <constraint firstItem="Xa6-4d-36V" firstAttribute="top" secondItem="3E5-ld-Ii8" secondAttribute="top" constant="18" id="LMH-cY-8gK"/>
+                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="top" secondItem="i7i-Lc-1sm" secondAttribute="bottom" constant="-5.3333333333333286" id="92B-1A-ibL"/>
                                                         <constraint firstAttribute="trailing" secondItem="i7i-Lc-1sm" secondAttribute="trailing" constant="164" id="MYw-Kc-mxX"/>
                                                         <constraint firstAttribute="bottom" secondItem="XtG-6X-KzA" secondAttribute="bottom" constant="4" id="MgQ-sU-9jE"/>
                                                         <constraint firstAttribute="height" constant="86" id="MhH-yW-PHh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rg5-VW-8Jy" secondAttribute="trailing" constant="123" id="YQI-FL-rsL"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rg5-VW-8Jy" secondAttribute="trailing" constant="16" id="YQI-FL-rsL"/>
                                                         <constraint firstItem="XtG-6X-KzA" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="iDq-cd-eI6"/>
                                                         <constraint firstItem="i7i-Lc-1sm" firstAttribute="top" secondItem="3E5-ld-Ii8" secondAttribute="top" constant="8" id="p1M-5q-JZd"/>
                                                     </constraints>
@@ -281,10 +253,8 @@
                                         <connections>
                                             <outlet property="backGroundView" destination="3E5-ld-Ii8" id="PIB-YG-Jdo"/>
                                             <outlet property="forkLabel" destination="5ik-VX-3Ts" id="Qdz-aH-xk5"/>
-                                            <outlet property="languageLabel" destination="DwX-JB-fl4" id="Qo1-1h-iWD"/>
                                             <outlet property="repoDescription" destination="rg5-VW-8Jy" id="lah-s2-Hod"/>
                                             <outlet property="repoName" destination="i7i-Lc-1sm" id="SeQ-Ud-mSe"/>
-                                            <outlet property="searchImage" destination="Xa6-4d-36V" id="6fa-LD-u72"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -306,16 +276,18 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="searchIconSmall" id="c57-6I-FB8"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="yEb-WW-L6s" id="PMN-Gw-Jp9"/>
+                        <outlet property="searchTextField" destination="bRe-F4-Iqx" id="b95-dS-DYL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mL-CB-e5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="631"/>
+            <point key="canvasLocation" x="224.63768115942031" y="630.97826086956525"/>
         </scene>
     </scenes>
     <resources>
         <image name="downloadsIcon" width="15" height="15"/>
-        <image name="languageIcon" width="17" height="15"/>
-        <image name="searchIconLarge" width="100" height="100"/>
         <image name="searchIconSmall" width="40" height="40"/>
         <image name="trendingIcon" width="38" height="35"/>
         <namedColor name="AccentColor">

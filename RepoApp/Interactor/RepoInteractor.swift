@@ -9,11 +9,12 @@ import Foundation
 protocol RepoInteractorProtcol {
     func getRepoData(pageNo : Int)
 }
+
 class RepoInteractor : RepoInteractorProtcol{
     var presenter : RepoPresenterProtcol!
     
     func getRepoData(pageNo: Int) {
-        NetworkService.sharedInstance.getDataFromNetwork(urlString: BASE_URL + String(pageNo) + NUMBER_OF_ITEMS) { (object : RepoBaseResponseModel) in
+        NetworkService.sharedInstance.getDataFromNetwork(urlString: BASE_URL + String(pageNo) + NUMBER_OF_ITEMS + STARS_DESC_SEGMENT) { (object : RepoBaseResponseModel) in
             self.presenter.presentRepoData(object: object)
             print(object.items.count)
         } onError: { (error) in
@@ -22,4 +23,15 @@ class RepoInteractor : RepoInteractorProtcol{
         }
 
     }
+}
+protocol SearchInteractorProtcole {
+    func getRepos()
+}
+class SearchInteractor : SearchInteractorProtcole{
+    var presenter : SearchPresenterProtcol?
+    func getRepos() {
+        
+    }
+    
+    
 }
