@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+//Spinner Indicator
 class SpinnerIndicator{
        static var spinner: UIActivityIndicatorView? = UIActivityIndicatorView()
     static func startIndicator(view:UIViewController){
@@ -34,6 +34,7 @@ class SpinnerIndicator{
         spinner?.stopAnimating()
     }
 }
+//AlertView
 class AlertView: NSObject{
     class func showAlert(view: UIViewController , title: String , message: String){
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)

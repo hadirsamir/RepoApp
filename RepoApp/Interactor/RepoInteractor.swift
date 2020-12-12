@@ -6,6 +6,7 @@
 //
 
 import Foundation
+//TrendingViewController Interactor protcol
 protocol RepoInteractorProtcol {
     func getRepoData(pageNo : Int)
 }
@@ -24,6 +25,7 @@ class RepoInteractor : RepoInteractorProtcol{
 
     }
 }
+//SearchViewController interactor
 protocol SearchInteractorProtcole {
     func getRepos()
 }
