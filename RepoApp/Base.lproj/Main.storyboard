@@ -173,14 +173,8 @@
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Search query..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-F4-Iqx" customClass="RoundedCornerTextField" customModule="RepoApp" customModuleProvider="target">
-                                <rect key="frame" x="8" y="58" width="398" height="34"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yEb-WW-L6s">
-                                <rect key="frame" x="0.0" y="100" width="414" height="587"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="575"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="SearchTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchTableViewCell" rowHeight="94.333335876464844" id="KcW-qv-GUk" customClass="SearchTableViewCell" customModule="RepoApp" customModuleProvider="target">
@@ -191,39 +185,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3E5-ld-Ii8">
-                                                    <rect key="frame" x="4" y="4" width="406" height="86.333333333333329"/>
+                                                    <rect key="frame" x="4" y="7.3333333333333357" width="406" height="80"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7i-Lc-1sm">
-                                                            <rect key="frame" x="8" y="7.9999999999999982" width="234" height="20.333333333333329"/>
+                                                            <rect key="frame" x="8" y="7.9999999999999982" width="390" height="20.333333333333329"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20.333333333333329" id="Vmg-Ov-MGI"/>
+                                                            </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-6X-KzA">
-                                                            <rect key="frame" x="8" y="62.333333333333329" width="119" height="20"/>
-                                                            <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downloadsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7Mq-QB-SYJ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="30" id="i9v-wP-RMk"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of forks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ik-VX-3Ts">
-                                                                    <rect key="frame" x="35" y="0.0" width="84" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="20" id="erp-td-Nrj"/>
-                                                            </constraints>
-                                                        </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-VW-8Jy">
-                                                            <rect key="frame" x="8" y="23" width="382" height="40"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="40" id="iQq-Y7-0yn"/>
-                                                            </constraints>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Repo Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-VW-8Jy">
+                                                            <rect key="frame" x="8" y="32.333333333333329" width="390" height="43.666666666666671"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -231,54 +205,55 @@
                                                     </subviews>
                                                     <color key="backgroundColor" name="AccentColor"/>
                                                     <constraints>
-                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="0hM-j6-lOd"/>
-                                                        <constraint firstItem="i7i-Lc-1sm" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="1YG-NP-ggn"/>
-                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="top" secondItem="i7i-Lc-1sm" secondAttribute="bottom" constant="-5.3333333333333286" id="92B-1A-ibL"/>
-                                                        <constraint firstAttribute="trailing" secondItem="i7i-Lc-1sm" secondAttribute="trailing" constant="164" id="MYw-Kc-mxX"/>
-                                                        <constraint firstAttribute="bottom" secondItem="XtG-6X-KzA" secondAttribute="bottom" constant="4" id="MgQ-sU-9jE"/>
-                                                        <constraint firstAttribute="height" constant="86" id="MhH-yW-PHh"/>
-                                                        <constraint firstAttribute="trailing" secondItem="rg5-VW-8Jy" secondAttribute="trailing" constant="16" id="YQI-FL-rsL"/>
-                                                        <constraint firstItem="XtG-6X-KzA" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="iDq-cd-eI6"/>
-                                                        <constraint firstItem="i7i-Lc-1sm" firstAttribute="top" secondItem="3E5-ld-Ii8" secondAttribute="top" constant="8" id="p1M-5q-JZd"/>
+                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="10n-74-bjW"/>
+                                                        <constraint firstItem="i7i-Lc-1sm" firstAttribute="leading" secondItem="3E5-ld-Ii8" secondAttribute="leading" constant="8" id="8a7-Yq-ZPO"/>
+                                                        <constraint firstItem="rg5-VW-8Jy" firstAttribute="top" secondItem="i7i-Lc-1sm" secondAttribute="bottom" constant="4" id="9UU-z0-QXp"/>
+                                                        <constraint firstAttribute="height" constant="80" id="C5p-Vd-ma7"/>
+                                                        <constraint firstAttribute="bottom" secondItem="rg5-VW-8Jy" secondAttribute="bottom" constant="4" id="G38-vA-fsl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="i7i-Lc-1sm" secondAttribute="trailing" constant="8" id="Yrk-iC-9FW"/>
+                                                        <constraint firstAttribute="trailing" secondItem="rg5-VW-8Jy" secondAttribute="trailing" constant="8" id="a5x-Hk-E38"/>
+                                                        <constraint firstItem="i7i-Lc-1sm" firstAttribute="top" secondItem="3E5-ld-Ii8" secondAttribute="top" constant="8" id="e6l-HW-HTw"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="3E5-ld-Ii8" firstAttribute="top" secondItem="t8r-BR-hVd" secondAttribute="top" constant="4" id="C4G-r6-8d1"/>
-                                                <constraint firstItem="3E5-ld-Ii8" firstAttribute="leading" secondItem="t8r-BR-hVd" secondAttribute="leading" constant="4" id="GCi-EG-Y3z"/>
-                                                <constraint firstAttribute="trailing" secondItem="3E5-ld-Ii8" secondAttribute="trailing" constant="4" id="Ifh-J9-kBG"/>
-                                                <constraint firstAttribute="bottom" secondItem="3E5-ld-Ii8" secondAttribute="bottom" constant="4" id="aTh-0p-zja"/>
+                                                <constraint firstItem="3E5-ld-Ii8" firstAttribute="leading" secondItem="t8r-BR-hVd" secondAttribute="leading" constant="4" id="ie2-0g-nmt"/>
+                                                <constraint firstItem="3E5-ld-Ii8" firstAttribute="centerY" secondItem="t8r-BR-hVd" secondAttribute="centerY" id="kOX-kS-lMP"/>
+                                                <constraint firstAttribute="trailing" secondItem="3E5-ld-Ii8" secondAttribute="trailing" constant="4" id="t3q-j3-VSd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="backGroundView" destination="3E5-ld-Ii8" id="PIB-YG-Jdo"/>
-                                            <outlet property="forkLabel" destination="5ik-VX-3Ts" id="Qdz-aH-xk5"/>
                                             <outlet property="repoDescription" destination="rg5-VW-8Jy" id="lah-s2-Hod"/>
                                             <outlet property="repoName" destination="i7i-Lc-1sm" id="SeQ-Ud-mSe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" placeholder="Search Repo Here" translatesAutoresizingMaskIntoConstraints="NO" id="Dz7-yp-w9o">
+                                <rect key="frame" x="0.0" y="50" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H6N-xk-fcL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bRe-F4-Iqx" firstAttribute="leading" secondItem="H6N-xk-fcL" secondAttribute="leading" constant="8" id="1ro-LG-ptF"/>
                             <constraint firstItem="H6N-xk-fcL" firstAttribute="trailing" secondItem="iJt-an-Boa" secondAttribute="trailing" id="Eh1-pn-3EH"/>
                             <constraint firstItem="H6N-xk-fcL" firstAttribute="trailing" secondItem="yEb-WW-L6s" secondAttribute="trailing" id="IYT-0p-4Mc"/>
                             <constraint firstItem="iJt-an-Boa" firstAttribute="leading" secondItem="ozs-qB-Wpf" secondAttribute="leading" id="K09-3z-ADz"/>
+                            <constraint firstItem="Dz7-yp-w9o" firstAttribute="trailing" secondItem="H6N-xk-fcL" secondAttribute="trailing" id="Y3Y-yu-0zQ"/>
                             <constraint firstItem="H6N-xk-fcL" firstAttribute="bottom" secondItem="yEb-WW-L6s" secondAttribute="bottom" id="YLU-Rs-AjI"/>
-                            <constraint firstItem="bRe-F4-Iqx" firstAttribute="top" secondItem="iJt-an-Boa" secondAttribute="bottom" constant="8" id="YwX-53-JBc"/>
+                            <constraint firstItem="yEb-WW-L6s" firstAttribute="top" secondItem="Dz7-yp-w9o" secondAttribute="bottom" constant="6" id="bcO-cq-6el"/>
+                            <constraint firstItem="Dz7-yp-w9o" firstAttribute="top" secondItem="iJt-an-Boa" secondAttribute="bottom" id="hjX-MA-E7k"/>
                             <constraint firstItem="iJt-an-Boa" firstAttribute="top" secondItem="H6N-xk-fcL" secondAttribute="top" id="kbU-Y4-qzf"/>
-                            <constraint firstItem="H6N-xk-fcL" firstAttribute="trailing" secondItem="bRe-F4-Iqx" secondAttribute="trailing" constant="8" id="p9r-fZ-17A"/>
                             <constraint firstItem="yEb-WW-L6s" firstAttribute="leading" secondItem="H6N-xk-fcL" secondAttribute="leading" id="sgQ-gn-Wsd"/>
-                            <constraint firstItem="yEb-WW-L6s" firstAttribute="top" secondItem="bRe-F4-Iqx" secondAttribute="bottom" constant="8" id="wUB-HF-r3P"/>
+                            <constraint firstItem="Dz7-yp-w9o" firstAttribute="leading" secondItem="H6N-xk-fcL" secondAttribute="leading" id="yrt-5g-RVK"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="searchIconSmall" id="c57-6I-FB8"/>
                     <connections>
                         <outlet property="searchTableView" destination="yEb-WW-L6s" id="PMN-Gw-Jp9"/>
-                        <outlet property="searchTextField" destination="bRe-F4-Iqx" id="b95-dS-DYL"/>
+                        <outlet property="searchTextField" destination="Dz7-yp-w9o" id="7y1-vm-KDM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2mL-CB-e5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -287,7 +262,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="downloadsIcon" width="15" height="15"/>
         <image name="searchIconSmall" width="40" height="40"/>
         <image name="trendingIcon" width="38" height="35"/>
         <namedColor name="AccentColor">

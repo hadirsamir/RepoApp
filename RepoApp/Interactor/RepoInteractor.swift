@@ -30,7 +30,13 @@ protocol SearchInteractorProtcole {
 class SearchInteractor : SearchInteractorProtcole{
     var presenter : SearchPresenterProtcol?
     func getRepos() {
-        
+        NetworkService.sharedInstance.getDataFromNetwork(urlString: SEARCH_REPOS_URL) { (object : RepoBaseResponseModel) in
+            self.presenter?.presentSearchRepos(object: object)
+            print(object.items.count)
+        } onError: { (error) in
+            print(error.localizedDescription)
+            self.presenter?.presentSearchError(stringError: error.localizedDescription)
+        }
     }
     
     

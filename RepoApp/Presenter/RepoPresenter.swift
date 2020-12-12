@@ -29,13 +29,13 @@ protocol SearchPresenterProtcol {
     func presentSearchError(stringError : String)
 }
 class SearchPresenter : SearchPresenterProtcol {
-    var view : SearchViewController?
+    var view : SearchViewProtcol?
     func presentSearchRepos(object: RepoBaseResponseModel) {
-        
+        view?.viewSearchResults(object: object)
     }
     
     func presentSearchError(stringError: String) {
-        
+        view?.viewSearchError(stringError: stringError)
     }
     
     

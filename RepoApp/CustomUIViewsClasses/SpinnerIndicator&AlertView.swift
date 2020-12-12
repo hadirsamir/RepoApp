@@ -15,7 +15,7 @@ class SpinnerIndicator{
         spinner?.translatesAutoresizingMaskIntoConstraints = false
         spinner?.center = view.view.center
         spinner?.hidesWhenStopped = true
-        spinner?.style = .whiteLarge
+        spinner?.style = UIActivityIndicatorView.Style.large
         spinner?.color = .black
         view.view.addSubview(spinner!)
         createConstraints(in: view.view)
@@ -40,3 +40,4 @@ class AlertView: NSObject{
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil))
         view.present(alert, animated: true, completion: nil)
     }
+}

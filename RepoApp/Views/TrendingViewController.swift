@@ -6,7 +6,7 @@
 //
 
 import UIKit
-//View Protcole
+//View Protcole(VIP architecture)
 protocol RepoViewProtcol {
     func viewRepos(object:RepoBaseResponseModel)
     func viewError(errorString : String)
@@ -91,6 +91,7 @@ extension TrendingViewController : RepoViewProtcol {
     func viewError(errorString: String) {
         SpinnerIndicator.stopIndicator()
         print(errorString)
+        AlertView.showAlert(view: self, title: "", message: errorString)
     }
     
     

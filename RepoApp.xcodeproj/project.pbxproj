@@ -18,8 +18,7 @@
 		04EED3BC25801BB3009C7B28 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3BA25801BB3009C7B28 /* RepoTableViewCell.swift */; };
 		04EED3BD25801BB3009C7B28 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3BB25801BB3009C7B28 /* SearchTableViewCell.swift */; };
 		04EED3C525801DCB009C7B28 /* RoundedCornerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3C225801DCB009C7B28 /* RoundedCornerButton.swift */; };
-		04EED3C625801DCB009C7B28 /* SpinnerIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3C325801DCB009C7B28 /* SpinnerIndicator.swift */; };
-		04EED3C725801DCB009C7B28 /* RoundedCornerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3C425801DCB009C7B28 /* RoundedCornerTextField.swift */; };
+		04EED3C625801DCB009C7B28 /* SpinnerIndicator&AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3C325801DCB009C7B28 /* SpinnerIndicator&AlertView.swift */; };
 		04EED3D32580224D009C7B28 /* RepoConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3D22580224D009C7B28 /* RepoConstants.swift */; };
 		04EED3D625802423009C7B28 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3D525802423009C7B28 /* NetworkService.swift */; };
 		04EED3DA2580C478009C7B28 /* RepoBaseResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EED3D92580C478009C7B28 /* RepoBaseResponseModel.swift */; };
@@ -45,8 +44,7 @@
 		04EED3BA25801BB3009C7B28 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
 		04EED3BB25801BB3009C7B28 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		04EED3C225801DCB009C7B28 /* RoundedCornerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerButton.swift; sourceTree = "<group>"; };
-		04EED3C325801DCB009C7B28 /* SpinnerIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerIndicator.swift; sourceTree = "<group>"; };
-		04EED3C425801DCB009C7B28 /* RoundedCornerTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerTextField.swift; sourceTree = "<group>"; };
+		04EED3C325801DCB009C7B28 /* SpinnerIndicator&AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SpinnerIndicator&AlertView.swift"; sourceTree = "<group>"; };
 		04EED3D22580224D009C7B28 /* RepoConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoConstants.swift; sourceTree = "<group>"; };
 		04EED3D525802423009C7B28 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		04EED3D92580C478009C7B28 /* RepoBaseResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoBaseResponseModel.swift; sourceTree = "<group>"; };
@@ -167,8 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				04EED3C225801DCB009C7B28 /* RoundedCornerButton.swift */,
-				04EED3C325801DCB009C7B28 /* SpinnerIndicator.swift */,
-				04EED3C425801DCB009C7B28 /* RoundedCornerTextField.swift */,
+				04EED3C325801DCB009C7B28 /* SpinnerIndicator&AlertView.swift */,
 			);
 			path = CustomUIViewsClasses;
 			sourceTree = "<group>";
@@ -328,7 +325,7 @@
 				04EED3DA2580C478009C7B28 /* RepoBaseResponseModel.swift in Sources */,
 				04EED39F257FCAB2009C7B28 /* ViewController.swift in Sources */,
 				04EED3C525801DCB009C7B28 /* RoundedCornerButton.swift in Sources */,
-				04EED3C625801DCB009C7B28 /* SpinnerIndicator.swift in Sources */,
+				04EED3C625801DCB009C7B28 /* SpinnerIndicator&AlertView.swift in Sources */,
 				04EED3E12580C671009C7B28 /* OwnerResponseModel.swift in Sources */,
 				04EED41F2580D9D4009C7B28 /* RepoPresenter.swift in Sources */,
 				04EED3B0257FCD70009C7B28 /* TrendingViewController.swift in Sources */,
@@ -336,7 +333,6 @@
 				04EED39D257FCAB2009C7B28 /* SceneDelegate.swift in Sources */,
 				04EED3DE2580C538009C7B28 /* ItemsResponseModel.swift in Sources */,
 				04EED3BC25801BB3009C7B28 /* RepoTableViewCell.swift in Sources */,
-				04EED3C725801DCB009C7B28 /* RoundedCornerTextField.swift in Sources */,
 				04EED41C2580D767009C7B28 /* RepoInteractor.swift in Sources */,
 				04EED3D625802423009C7B28 /* NetworkService.swift in Sources */,
 				04EED3BD25801BB3009C7B28 /* SearchTableViewCell.swift in Sources */,
