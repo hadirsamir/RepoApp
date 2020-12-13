@@ -17,9 +17,9 @@ class RepoInteractor : RepoInteractorProtcol{
     func getRepoData(pageNo: Int) {
         NetworkService.sharedInstance.getDataFromNetwork(urlString: BASE_URL + String(pageNo) + NUMBER_OF_ITEMS + STARS_DESC_SEGMENT) { (object : RepoBaseResponseModel) in
             self.presenter.presentRepoData(object: object)
-            print(object.items.count)
+           
         } onError: { (error) in
-            print(error.localizedDescription)
+            
             self.presenter.presentError(errorString: error.localizedDescription)
         }
 
@@ -34,9 +34,9 @@ class SearchInteractor : SearchInteractorProtcole{
     func getRepos() {
         NetworkService.sharedInstance.getDataFromNetwork(urlString: SEARCH_REPOS_URL) { (object : RepoBaseResponseModel) in
             self.presenter?.presentSearchRepos(object: object)
-            print(object.items.count)
+       
         } onError: { (error) in
-            print(error.localizedDescription)
+      
             self.presenter?.presentSearchError(stringError: error.localizedDescription)
         }
     }
